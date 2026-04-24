@@ -1,0 +1,71 @@
+@import "tailwindcss";
+
+:root {
+  --brand-yellow: oklch(90.5% 0.182 98.111);
+}
+
+@theme {
+  --color-brand-yellow: var(--brand-yellow);
+  --font-rethink-sans: var(--font-rethink-sans), sans-serif;
+  --spacing-1440: 90rem;
+  --animate-marquee: marquee 20s linear infinite;
+  --animate-marquee-reverse: marquee-reverse 20s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-33.33%);
+  }
+}
+
+@keyframes marquee-reverse {
+  from {
+    transform: translateX(-33.33%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+.terminal-typing {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid oklch(90.5% 0.182 98.111);
+  animation: typing 5s steps(44) infinite, blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  0% {
+    width: 0ch;
+  }
+
+  60% {
+    width: 44ch;
+  }
+
+  80% {
+    width: 44ch;
+  }
+
+  100% {
+    width: 0ch;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
