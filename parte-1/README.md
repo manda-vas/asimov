@@ -13,4 +13,4 @@ Acesse [http://localhost:3000](http://localhost:3000)
 A IA foi o principal acelerador na estruturação semântica e conversão de layout para código. 
 
 ### Ajustes Manuais
-Apenas ajustes finos de CSS, evitar o gasto tokens desnecessários.
+Apenas ajustes finos de CSS, evitar o gasto com tokens desnecessários.
